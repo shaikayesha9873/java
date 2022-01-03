@@ -1,0 +1,71 @@
+import java.util.Scanner;
+import java.util.Locale;
+class StringMethods
+{
+ public static void main(String args[])
+ {
+   Scanner sc = new Scanner(System.in);
+   System.out.println("enter the String1 ");
+   String str1 = sc.nextLine();
+   String str2 = sc.nextLine();
+   String english = str1.toLowerCase(Locale.forLanguageTag("en"));
+   String tasleem = str2.toUpperCase(Locale.forLanguageTag("en"));
+   System.out.println("length of string is   :"+str1.length());
+   System.out.println("sub String is   :"+str1.substring(6));
+   System.out.println("char is     :" +str1.charAt(6));
+   System.out.println("substring start and end is   :"+str2.substring(0,6));
+   System.out.println("replace string   :"+str1.replace(str1,str2));
+   System.out.println("join     :"+str1.join(str1,str2));
+   System.out.println("boolean     :"+str1.equals(str2));
+   System.out.println("empty or not     :"+str1.isEmpty());
+   System.out.println(" concatenates     :"+str1.concat(str2));
+   System.out.println("intern      :"+str2.intern());
+   System.out.println("int index of   :"+str1.indexOf(2));
+   System.out.println("lower case     :"+str1.toLowerCase());
+   System.out.println("locale    :"+ english);
+   System.out.println("upper case    "+str1.toUpperCase());
+   System.out.println("upper locale       :"+ tasleem);
+   System.out.println("trim           :"+str1.trim());
+   System.out.println("format       :"+String.format(str1));
+   System.out.println("split the string :"+str1.split("r"));
+   System.out.println("the intered string :"+str1.intern());
+   if(str2.equalsIgnoreCase(str1))  {
+       System.out.println("two strings are equals");
+     } else {
+       System.out.println("not equal");
+      }
+    
+  
+   }
+}
+   
+OUTPUT:
+:\>javac StringMethods.java
+
+D:\>java StringMethods
+enter the String1
+ hellowelcometojava
+ Ayeshu
+length of string is   :19
+sub String is   :welcometojava
+char is     :w
+substring start and end is   : Ayesh
+replace string   : Ayeshu
+join     : Ayeshu
+boolean     :false
+empty or not     :false
+ concatenates     : hellowelcometojava Ayeshu
+intern      : Ayeshu
+int index of   :-1
+lower case     : hellowelcometojava
+locale    : hellowelcometojava
+upper case     HELLOWELCOMETOJAVA
+upper locale       : AYESHU
+trim           :hellowelcometojava
+format       : hellowelcometojava
+split the string :[Ljava.lang.String;@b4c966a
+the intered string : hellowelcometojava
+not equal
+
+
+
