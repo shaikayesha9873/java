@@ -1,0 +1,129 @@
+class ArithematcExeption
+{  
+  public static void main(String args[])
+  {  
+   try{  
+      int data=100/0;  
+   }
+    catch(ArithmeticException e)
+     {
+       System.out.println(e);
+      }  
+   System.out.println("it is having eccepton");  
+  }  
+}
+ output:
+:\>javac ArithematcExeption.java
+
+D:\>java ArithematcExeption
+java.lang.ArithmeticException: / by zero
+it is having eccepton
+
+
+
+import java.io.*;
+class NullPointerException
+{
+ public static void main(String args[])
+ {
+  String str=null;
+  String ayesha=null;
+  try
+  {
+   if(ayesha.equals(str))
+    System.out.println("same");
+   else
+    System.out.println("not same");
+   }
+   catch(NullPointerException e)
+    {
+    System.out.println(e);
+}
+}
+}
+  
+output:
+same
+
+
+import java.util.*;
+class Exception
+{
+ public static void main(String args[])
+ {
+  Scanner sc = new Scanner(System.in);
+  String str = sc.next();
+  int n = sc.nextInt();
+  try
+   {
+    System.out.println(str.charAt(n));
+    }
+   catch(StringIndexOutOfBoundsException e)
+    {
+      System.out.println(e);
+    }
+  }
+}
+
+
+import java.util.*;
+class Exception321
+{
+public static void main(String args[])
+  {
+  Scanner sc = new Scanner(System.in);
+  int arr[]=new int[]{1,2,3,4,5,6,};
+  int n=sc.nextInt();
+  try
+   {
+    int index=arr[n];
+    System.out.println(index);
+   }
+  catch(Exception e)
+   {
+     System.out.println(e);
+   }
+  finally
+   {
+    System.out.println("final block");
+    }
+   }
+  }
+
+OUTPUT:
+
+E:\>javac Exception321.java
+
+E:\>java Exception321
+4
+5
+final block
+
+E:\>javac Exception321.java
+
+E:\>java Exception321
+8
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 6
+final block
+
+
+
+import java.util.*;
+import java.io.*;
+class Exception5
+{
+public static void main(String args[])throws IOException
+{
+ Scanner sc=new Scanner(System.in);
+ File f=new File("exception.txt");
+ FileIputStream s=new FileInputStream(f);
+ try
+    {
+     System.out.println(s);
+     }
+  catch(Exception e)
+     {
+      System.out.println(e);
+     }
+   }
+}
