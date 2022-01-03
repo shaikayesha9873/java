@@ -1,0 +1,149 @@
+import java.io.*;
+import java.util.*;
+public class Rt {
+       public static void main(String args[]) {
+               Scanner sc=new Scanner(System.in);
+               String A=sc.next();
+               String B=sc.next();
+             
+              {
+               System.out.println(A.length()+B.length());
+                if(A.length()>B.length())
+                 {
+               System.out.println("No");
+               System.out.println(A.substring(0,1).toUpperCase()+A.substring(1).toLowerCase() + B.substring(0,1).toUpperCase()+B.substring(1).toLowerCase()+"");
+             }
+                }
+       
+        }
+}
+
+OUTPUT:
+D:\>javac Rt.java
+
+D:\>java Rt
+hello
+java
+9
+No
+HelloJava
+
+
+PROGRAM 2;
+import java.util.Scanner;
+class Substring 
+{
+public static void main (String args[]) 
+   {
+   Scanner sc=new Scanner(System.in);
+     String name=sc.next();
+      int num1=sc.nextInt();
+      int num2=sc.nextInt();
+      System.out.println(name.substring(num1,num2));
+     }
+}
+OUTPUT:
+
+D:\>javac Substring.java
+
+D:\>java Substring
+Helloworld
+3
+7
+lowo
+
+
+PROGRAM 3:
+import java.util.Scanner;
+class Anagrams
+{
+public static void main(String args[])
+  {
+Scanner sc=new Scanner(System.in);
+      String s1=sc.next();
+      String s2=sc.next();
+      boolean s1ands2=true;
+      {
+          if(s1ands2)
+       {
+         System.out.println("Anagrams");
+        }
+        else
+          {
+            System.out.println("Not Anagrams");
+           }
+       }
+    } 
+}
+
+OUTPUT:
+D:\>javac Anagrams.java
+
+D:\>java Anagrams
+anagram
+margana
+Anagrams
+
+PROGRAM 4:import java.util.Scanner;
+class Palindrome
+{
+  public static void main(String args[])
+   {
+     String original,Reverse="";
+     Scanner sc=new Scanner(System.in);
+      original=sc.next();
+      {
+        int length=original.length();
+        for(int i= length-1;i>=0;i--)
+        Reverse = Reverse+original.charAt(i);
+        if(original.equals(Reverse))
+        {
+         System.out.println("yes");
+         }
+           else
+           {
+             System.out.println("No");
+           }
+       }
+    } 
+}
+
+OUTPUT:
+D:\>javac Palindrome.java
+
+D:\>java Palindrome
+madam
+yes
+
+PROGRAM 5:
+import java.util.Scanner;
+import java.io.*;
+class Primenumber
+{
+ public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+     int num=sc.nextInt(); 
+          for(int i=2;i<=num/2;++i)
+      
+     {
+               if(num%2==0)
+                {
+                  System.out.println("it is not a prime number");
+                 
+                 }
+                  else
+                   {
+                     System.out.println("is a prime number");           
+                     if(num!=100) 
+                       break;
+                     }
+                                      
+           }
+          
+    }
+}
+OUTPUT:
+D:\>java Primenumber
+29
+is a prime number
