@@ -1,0 +1,74 @@
+PROGRAM :
+import java.util.Scanner;
+class Concatenation
+{
+  public static void main(String[] args)
+    {
+ Scanner sc = new Scanner(System.in);
+ String str1 = sc.next();
+ String str2 = sc.next();
+ System.out.println(str1 + str2);
+     }
+}
+ 
+OUTPUT:
+
+D:\>javac Concatenation.java
+
+D:\>java Concatenation
+hello
+world
+helloworld
+
+PROGRAM 2
+import java.util.Scanner;
+class Reverse1
+{
+ public static void main(String args[])
+ {
+  Scanner sc = new Scanner(System.in);
+  String str = sc.next();
+  StringBuffer str1=new StringBuffer(str);
+  str1.reverse();
+  System.out.println(str1);
+ }
+}
+  
+OUTPUT: 
+  D:\>javac Reverse1.java
+
+D:\>java Reverse1
+accretion
+noitercca
+
+
+PROGRAM 3:
+import java.util.*;
+public class Upper
+{
+ static void uppercase(String s, int length)
+ {
+  String temp="";
+  for(int i=0;i<length;i++)
+  {
+   if(s.charAt(i)>=65 && s.charAt(i)<=90)
+    temp+=s.charAt(i);
+   else
+    System.out.print(s.charAt(i));
+  }
+ System.out.print(temp);
+}
+public static void main(String args[])
+{
+ Scanner sc=new Scanner(System.in);
+ String s=sc.nextLine();
+ int length=s.length();
+ uppercase(s,length);
+}
+}
+OUTPUT:
+:\>javac Upper.java
+
+D:\>java Upper
+ABwRS
+wABRS
